@@ -1,0 +1,2174 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茄子短视频官方网站-平台特色_内容类型_使用场景</title>
+    <meta name="description" content="茄子短视频官方网站提供短视频内容导航与分类索引，涵盖搞笑短剧、生活记录、才艺展示等方向，适合寻找碎片化娱乐与实用技巧的观众。">
+    <meta name="keywords" content="短视频平台,搞笑短剧,生活记录,才艺展示,短视频分类">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23623a1e'/%3E%3Cpath d='M10 8h6c4 0 7 2.5 7 6.5S20 21 16 21h-6V8zm5 10c2 0 3.5-1.3 3.5-3.5S17 11 15 11h-2v7h2z' fill='%23f9e7c7'/%3E%3Ccircle cx='24' cy='24' r='5' fill='%23e8b04b'/%3E%3C/svg%3E">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg: #fbf7f0;
+            --surface: #ffffff;
+            --surface-warm: #fffaf2;
+            --border: #e8ddd0;
+            --border-light: #f0e9df;
+            --text-primary: #2e241c;
+            --text-secondary: #6b5c4c;
+            --text-muted: #8f7e6b;
+            --brand: #623a1e;
+            --brand-light: #7d4b28;
+            --accent: #e8b04b;
+            --accent-soft: #fdf2d9;
+            --success: #4a7c59;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(46, 36, 28, 0.06);
+            --shadow-md: 0 4px 12px rgba(46, 36, 28, 0.08);
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            --sticky-height: 96px;
+            --container-max: 1320px;
+            --sidebar-left: 180px;
+            --sidebar-right: 250px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-padding-top: var(--sticky-height);
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        img, svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 吸顶公告条 */
+        .announcement-bar {
+            background: var(--brand);
+            color: #f9e7c7;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+            padding: 8px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .announcement-bar .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .announcement-bar strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* 吸顶页头 */
+        .site-header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 34px;
+            z-index: 99;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .brand-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .brand-logo {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+        }
+
+        .brand-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--brand);
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .header-nav a {
+            font-size: 14px;
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            border-radius: 20px;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+
+        .header-nav a:hover {
+            background: var(--accent-soft);
+            color: var(--brand);
+        }
+
+        .header-search {
+            display: flex;
+            align-items: center;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 4px 6px 4px 14px;
+            min-width: 180px;
+            transition: border-color 0.2s;
+        }
+
+        .header-search:focus-within {
+            border-color: var(--accent);
+        }
+
+        .header-search input {
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            color: var(--text-primary);
+            outline: none;
+            width: 100%;
+            padding: 4px 0;
+        }
+
+        .header-search input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .header-search button {
+            background: var(--brand);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+            transition: background 0.2s;
+        }
+
+        .header-search button:hover {
+            background: var(--accent);
+            color: var(--brand);
+        }
+
+        /* 首屏 */
+        .hero {
+            background: linear-gradient(145deg, #3d2412 0%, #623a1e 60%, #7d4b28 100%);
+            color: #f9e7c7;
+            padding: 48px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(232, 176, 75, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(232, 176, 75, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            flex: 1 1 480px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(232, 176, 75, 0.2);
+            border: 1px solid rgba(232, 176, 75, 0.4);
+            color: var(--accent);
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 12px;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .hero-desc {
+            font-size: 16px;
+            color: #e8d5bc;
+            max-width: 560px;
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #2e241c;
+            border: none;
+            padding: 10px 26px;
+            border-radius: 28px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(232, 176, 75, 0.35);
+            color: #2e241c;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: #f9e7c7;
+            border: 1px solid rgba(249, 231, 199, 0.4);
+            padding: 10px 26px;
+            border-radius: 28px;
+            font-size: 15px;
+            transition: background 0.2s, border-color 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-ghost:hover {
+            background: rgba(249, 231, 199, 0.1);
+            border-color: #f9e7c7;
+            color: #fff;
+        }
+
+        .hero-visual {
+            flex: 0 0 260px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .hero-stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(249, 231, 199, 0.15);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero-stat-label {
+            font-size: 12px;
+            color: #c9b49a;
+            margin-bottom: 2px;
+        }
+
+        .hero-stat-value {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .hero-stat-sub {
+            font-size: 12px;
+            color: #e8d5bc;
+        }
+
+        /* 三栏主布局 */
+        .main-layout {
+            padding: 32px 0 48px;
+        }
+
+        .three-col {
+            display: grid;
+            grid-template-columns: var(--sidebar-left) 1fr var(--sidebar-right);
+            gap: 28px;
+            align-items: start;
+        }
+
+        /* 左栏 */
+        .sidebar-left {
+            position: sticky;
+            top: calc(var(--sticky-height) + 16px);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .sidebar-section-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .channel-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .channel-nav a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            color: var(--text-secondary);
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .channel-nav a:hover {
+            background: var(--accent-soft);
+            color: var(--brand);
+        }
+
+        .channel-nav a.active {
+            background: var(--accent-soft);
+            color: var(--brand);
+            font-weight: 600;
+        }
+
+        .channel-nav .nav-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            opacity: 0.7;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tag-cloud a {
+            font-size: 12px;
+            color: var(--text-secondary);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .tag-cloud a:hover {
+            background: var(--accent-soft);
+            border-color: var(--accent);
+            color: var(--brand);
+        }
+
+        /* 中栏 */
+        .content-main {
+            min-width: 0;
+        }
+
+        .section-block {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 24px 26px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .section-header h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-header h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background: var(--accent);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .section-header .section-hint {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .intro-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .intro-text p {
+            margin-bottom: 12px;
+        }
+
+        .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 热门卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 14px;
+        }
+
+        .content-card {
+            background: var(--surface-warm);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .content-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .card-tag {
+            font-size: 11px;
+            background: var(--accent-soft);
+            color: var(--brand);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .card-tag.secondary {
+            background: #f0f4e8;
+            color: var(--success);
+        }
+
+        .content-card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+
+        .content-card .card-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            flex: 1;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .card-meta .hot {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* 最新更新列表 */
+        .update-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .update-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .update-item:last-child {
+            border-bottom: none;
+        }
+
+        .update-index {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--accent);
+            min-width: 24px;
+            padding-top: 1px;
+        }
+
+        .update-body {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .update-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+
+        .update-summary {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .update-time {
+            font-size: 12px;
+            color: var(--text-muted);
+            white-space: nowrap;
+            flex-shrink: 0;
+            padding-top: 2px;
+        }
+
+        /* 分类入口 */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .category-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 14px 8px;
+            background: var(--surface-warm);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .category-item:hover {
+            background: var(--accent-soft);
+            border-color: var(--accent);
+        }
+
+        .category-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .category-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .category-count {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        /* 深度解析正文 */
+        .article-body h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 20px 0 8px;
+            padding-left: 10px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .article-body h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .article-body p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .article-body ul {
+            margin: 8px 0 16px 20px;
+        }
+
+        .article-body li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 6px;
+        }
+
+        .article-body .highlight-box {
+            background: var(--accent-soft);
+            border-left: 3px solid var(--accent);
+            padding: 12px 16px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 16px 0;
+            font-size: 14px;
+            color: var(--brand);
+            line-height: 1.7;
+        }
+
+        /* 体验指南步骤 */
+        .guide-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .guide-step {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--brand);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .step-text h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+
+        .step-text p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* FAQ */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--surface-warm);
+            transition: background 0.2s;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            font-size: 18px;
+            color: var(--accent);
+            font-weight: 400;
+            transition: transform 0.2s;
+        }
+
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+
+        .faq-item summary:hover {
+            background: var(--accent-soft);
+        }
+
+        .faq-answer {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            border-top: 1px solid var(--border-light);
+        }
+
+        /* 用户评论 */
+        .comment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: 380px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+
+        .comment-item {
+            display: flex;
+            gap: 10px;
+            padding: 10px 12px;
+            background: var(--surface-warm);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+        }
+
+        .comment-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--brand);
+            flex-shrink: 0;
+        }
+
+        .comment-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 2px;
+            flex-wrap: wrap;
+        }
+
+        .comment-nickname {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .comment-date {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .comment-text {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* 相关资讯 */
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .news-item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-title-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 2px;
+        }
+
+        .news-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .news-date {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .news-summary {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* 相关推荐标签 */
+        .recommend-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .recommend-tags a {
+            font-size: 13px;
+            padding: 6px 14px;
+            background: var(--surface-warm);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            color: var(--text-secondary);
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .recommend-tags a:hover {
+            background: var(--accent-soft);
+            border-color: var(--accent);
+            color: var(--brand);
+        }
+
+        /* 趋势观察 */
+        .trend-panel {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        .trend-item {
+            background: var(--surface-warm);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 12px 14px;
+        }
+
+        .trend-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .trend-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--brand);
+            margin-bottom: 2px;
+        }
+
+        .trend-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* 右栏 */
+        .sidebar-right {
+            position: sticky;
+            top: calc(var(--sticky-height) + 16px);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .side-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 18px 16px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .side-card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .side-card-title::before {
+            content: '';
+            display: inline-block;
+            width: 3px;
+            height: 14px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .toc-list a {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 5px 8px;
+            border-radius: var(--radius-sm);
+            display: block;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .toc-list a:hover {
+            background: var(--accent-soft);
+            color: var(--brand);
+        }
+
+        .hot-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            counter-reset: hot-counter;
+        }
+
+        .hot-list a {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 6px 4px;
+            border-radius: var(--radius-sm);
+            transition: background 0.2s;
+            counter-increment: hot-counter;
+        }
+
+        .hot-list a::before {
+            content: counter(hot-counter);
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-muted);
+            min-width: 18px;
+        }
+
+        .hot-list a:nth-child(-n+3)::before {
+            color: var(--accent);
+        }
+
+        .hot-list a:hover {
+            background: var(--accent-soft);
+            color: var(--brand);
+        }
+
+        .extend-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .extend-item {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 8px 10px;
+            background: var(--surface-warm);
+            border-radius: var(--radius-sm);
+            border-left: 2px solid var(--accent);
+            line-height: 1.5;
+            transition: background 0.2s;
+        }
+
+        .extend-item:hover {
+            background: var(--accent-soft);
+            color: var(--brand);
+        }
+
+        /* 页尾 */
+        .site-footer {
+            background: #2e241c;
+            color: #c9b49a;
+            padding: 36px 0 24px;
+            margin-top: 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+
+        .footer-brand .footer-logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f9e7c7;
+            margin-bottom: 8px;
+        }
+
+        .footer-brand p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #a08b75;
+            max-width: 320px;
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #f9e7c7;
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .footer-col ul a {
+            font-size: 13px;
+            color: #a08b75;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(249, 231, 199, 0.12);
+            padding-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 12px;
+            color: #8f7e6b;
+        }
+
+        .footer-bottom .disclaimer {
+            font-size: 11px;
+            color: #7a6b5a;
+        }
+
+        /* 无结果提示 */
+        .no-result {
+            display: none;
+            padding: 16px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+            background: var(--surface-warm);
+            border-radius: var(--radius-md);
+            border: 1px dashed var(--border);
+        }
+
+        /* 响应式 */
+        @media (max-width: 1100px) {
+            .three-col {
+                grid-template-columns: 1fr var(--sidebar-right);
+            }
+            .sidebar-left {
+                display: none;
+            }
+            .header-nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 820px) {
+            .three-col {
+                grid-template-columns: 1fr;
+            }
+            .sidebar-right {
+                position: static;
+                order: 2;
+            }
+            .content-main {
+                order: 1;
+            }
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero-visual {
+                flex: 1 1 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .hero-stat-card {
+                flex: 1 1 140px;
+            }
+            .site-header {
+                top: 34px;
+            }
+            .header-inner {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 12px;
+            }
+            .section-block {
+                padding: 16px 14px;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .header-search {
+                min-width: 120px;
+            }
+            .brand-text {
+                font-size: 17px;
+            }
+            .hero-actions {
+                flex-direction: column;
+            }
+            .btn-primary, .btn-ghost {
+                justify-content: center;
+            }
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 吸顶公告条 -->
+    <div class="announcement-bar" role="region" aria-label="公告">
+        <div class="container">
+            <span>📢 本周新增 <strong>生活记录</strong> 与 <strong>才艺展示</strong> 分类精选，通勤追更看这里</span>
+        </div>
+    </div>
+
+    <!-- 吸顶页头 -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="brand-group" aria-label="茄子短视频官方网站 首页">
+                <svg class="brand-logo" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="40" height="40" rx="10" fill="#623a1e"/>
+                    <path d="M12 10h8c5 0 9 3.2 9 8.2S25 27 20 27h-8V10zm7 13c3 0 5.5-2 5.5-4.8S22 13.5 19 13.5h-3.5V23H19z" fill="#f9e7c7"/>
+                    <circle cx="30" cy="30" r="6" fill="#e8b04b"/>
+                </svg>
+                <span class="brand-text">茄子短视频官方网站</span>
+            </a>
+            <nav class="header-nav" aria-label="主题导航">
+                <a href="/#intro">平台介绍</a>
+                <a href="/#hot">热门推荐</a>
+                <a href="/#update">最新更新</a>
+                <a href="/#category">分类入口</a>
+                <a href="/#deep">深度解析</a>
+                <a href="/#guide">体验指南</a>
+                <a href="/#faq">常见问答</a>
+            </nav>
+            <div class="header-search" role="search">
+                <input type="search" id="searchInput" placeholder="搜索内容方向…" aria-label="搜索内容方向">
+                <button type="button" id="searchBtn" aria-label="搜索">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 首屏 -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">短视频内容导航</span>
+                <h1 id="hero-heading">茄子短视频官方网站</h1>
+                <p class="hero-desc">
+                    聚合搞笑短剧、生活记录、才艺展示与实用技巧类短视频，提供清晰的分类索引与内容看点，帮助你在碎片时间快速找到想看的短视频方向。
+                </p>
+                <div class="hero-actions">
+                    <a href="/#hot" class="btn-primary">浏览热门内容 →</a>
+                    <a href="/#category" class="btn-ghost">按分类筛选</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-stat-card">
+                    <div class="hero-stat-label">内容方向</div>
+                    <div class="hero-stat-value">8 大分类</div>
+                    <div class="hero-stat-sub">短剧 · 生活 · 才艺 · 技巧</div>
+                </div>
+                <div class="hero-stat-card">
+                    <div class="hero-stat-label">每日更新</div>
+                    <div class="hero-stat-value">20+ 条</div>
+                    <div class="hero-stat-sub">通勤、睡前均可刷</div>
+                </div>
+                <div class="hero-stat-card">
+                    <div class="hero-stat-label">适合场景</div>
+                    <div class="hero-stat-value">碎片时间</div>
+                    <div class="hero-stat-sub">1-3 分钟快速消费</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 三栏主内容区 -->
+    <div class="main-layout">
+        <div class="container">
+            <div class="three-col">
+
+                <!-- 左栏：频道导航 + 标签索引 -->
+                <aside class="sidebar-left" aria-label="频道导航与标签索引">
+                    <div>
+                        <div class="sidebar-section-title">频道导航</div>
+                        <nav class="channel-nav" aria-label="频道导航">
+                            <a href="/#intro" class="active">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2 2"/></svg>
+                                平台介绍
+                            </a>
+                            <a href="/#hot">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+                                热门推荐
+                            </a>
+                            <a href="/#update">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+                                最新更新
+                            </a>
+                            <a href="/#category">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                                分类入口
+                            </a>
+                            <a href="/#deep">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12l10-9 10 9"/><path d="M4 10v10h16V10"/></svg>
+                                深度解析
+                            </a>
+                            <a href="/#guide">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+                                体验指南
+                            </a>
+                            <a href="/#faq">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 016 0c0 2-3 2-3 4"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></svg>
+                                常见问答
+                            </a>
+                        </nav>
+                    </div>
+                    <div>
+                        <div class="sidebar-section-title">内容标签</div>
+                        <div class="tag-cloud">
+                            <a href="/#hot">搞笑短剧</a>
+                            <a href="/#hot">生活记录</a>
+                            <a href="/#hot">才艺展示</a>
+                            <a href="/#hot">美食制作</a>
+                            <a href="/#hot">通勤追更</a>
+                            <a href="/#hot">睡前刷</a>
+                            <a href="/#hot">完结短剧</a>
+                            <a href="/#hot">实用技巧</a>
+                            <a href="/#hot">情感短剧</a>
+                            <a href="/#hot">悬疑微短剧</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- 中栏：主内容 -->
+                <main class="content-main">
+
+                    <!-- 1. 内容简介 -->
+                    <section class="section-block" id="intro">
+                        <div class="section-header">
+                            <h2>平台内容定位</h2>
+                            <span class="section-hint">适合谁看 · 看什么</span>
+                        </div>
+                        <div class="intro-text">
+                            <p>
+                                <strong>茄子短视频官方网站</strong>是一个面向短视频内容消费的导航型页面，围绕搞笑短剧、生活记录、才艺展示和实用技巧等方向，整理可快速浏览的内容条目。无论你是想在通勤路上找点轻松搞笑的内容，还是睡前刷几集完结短剧，这里都按类型和场景做了清晰索引。
+                            </p>
+                            <p>
+                                短视频类型的选择往往取决于观看场景：通勤时适合 1—3 分钟的搞笑短剧或生活妙招；睡前则更适合节奏舒缓的生活记录或情感短剧。页面中的分类入口和标签索引都按这些真实使用场景组织，帮助你减少翻找时间，快速定位想看的短视频方向。
+                            </p>
+                            <p>
+                                对于关注更新节奏的观众，最新更新板块按日期列出近期条目，热门推荐板块则按综合热度展示值得优先浏览的内容。如果你在几类内容之间犹豫，FAQ 和深度解析部分对比了不同类型短视频的观看门槛、节奏特点和适合人群，可作为选择依据。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- 2. 热门内容推荐 -->
+                    <section class="section-block" id="hot">
+                        <div class="section-header">
+                            <h2>热门内容推荐</h2>
+                            <span class="section-hint">按综合热度排序</span>
+                        </div>
+                        <div class="card-grid" id="hotCardGrid">
+                            <article class="content-card">
+                                <div class="card-tag-row">
+                                    <span class="card-tag">搞笑短剧</span>
+                                    <span class="card-tag secondary">通勤追更</span>
+                                </div>
+                                <h3>办公室日常：开会时的摸鱼姿势</h3>
+                                <p class="card-desc">3 分钟一集的职场搞笑短剧，围绕开会、写周报、点外卖展开，适合午休和通勤时轻松一笑。</p>
+                                <div class="card-meta"><span class="hot">🔥 热度 9.4</span><span>更新至 12 集</span></div>
+                            </article>
+                            <article class="content-card">
+                                <div class="card-tag-row">
+                                    <span class="card-tag">生活记录</span>
+                                    <span class="card-tag secondary">睡前看</span>
+                                </div>
+                                <h3>独居晚餐：15 分钟一人食</h3>
+                                <p class="card-desc">记录下班后做一顿简单晚餐的过程，节奏舒缓，附带食材清单和步骤，适合睡前放松观看。</p>
+                                <div class="card-meta"><span class="hot">🔥 热度 9.1</span><span>日更中</span></div>
+                            </article>
+                            <article class="content-card">
+                                <div class="card-tag-row">
+                                    <span class="card-tag">悬疑微短剧</span>
+                                    <span class="card-tag secondary">完结</span>
+                                </div>
+                                <h3>深夜快递：门外的包裹是谁放的</h3>
+                                <p class="card-desc">每集 5 分钟的悬疑微短剧，围绕一个神秘包裹展开，适合喜欢悬念、不想追长剧的观众。</p>
+                                <div class="card-meta"><span class="hot">🔥 热度 8.9</span><span>全 8 集完结</span></div>
+                            </article>
+                            <article class="content-card">
+                                <div class="card-tag-row">
+                                    <span class="card-tag">才艺展示</span>
+                                    <span class="card-tag secondary">零基础</span>
+                                </div>
+                                <h3>零基础学尤克里里：第一课</h3>
+                                <p class="card-desc">从持琴姿势到简单和弦，5 分钟讲清一个知识点，适合想利用碎片时间培养兴趣的初学者。</p>
+                                <div class="card-meta"><span class="hot">🔥 热度 8.7</span><span>共 6 节</span></div>
+                            </article>
+                            <article class="content-card">
+                                <div class="card-tag-row">
+                                    <span class="card-tag">美食制作</span>
+                                    <span class="card-tag secondary">快手菜</span>
+                                </div>
+                                <h3>电饭煲一锅出：腊肠焖饭</h3>
+                                <p class="card-desc">把食材放进电饭煲就能完成的懒人焖饭，附带咸淡调整技巧，适合下班后不想大动干戈的人。</p>
+                                <div class="card-meta"><span class="hot">🔥 热度 8.6</span><span>更新至 5 集</span></div>
+                            </article>
+                            <article class="content-card">
+                                <div class="card-tag-row">
+                                    <span class="card-tag">情感短剧</span>
+                                    <span class="card-tag secondary">治愈</span>
+                                </div>
+                                <h3>合租室友的猫：相处第七天</h3>
+                                <p class="card-desc">都市合租题材的温情短剧，通过宠物串联起两个陌生人的日常，适合喜欢轻喜剧和情感向的观众。</p>
+                                <div class="card-meta"><span class="hot">🔥 热度 8.5</span><span>更新至 9 集</span></div>
+                            </article>
+                            <article class="content-card">
+                                <div class="card-tag-row">
+                                    <span class="card-tag">实用技巧</span>
+                                    <span class="card-tag secondary">手机拍摄</span>
+                                </div>
+                                <h3>手机拍视频：三个稳定器替代方案</h3>
+                                <p class="card-desc">不用买稳定器，用日常物品也能拍出稳定画面，适合想尝试拍短视频的新手参考。</p>
+                                <div class="card-meta"><span class="hot">🔥 热度 8.3</span><span>共 3 集</span></div>
+                            </article>
+                            <article class="content-card">
+                                <div class="card-tag-row">
+                                    <span class="card-tag">搞笑短剧</span>
+                                    <span class="card-tag secondary">方言</span>
+                                </div>
+                                <h3>东北话点菜：服务员听懵了</h3>
+                                <p class="card-desc">方言搞笑短剧，用东北话点菜的误会场景，节奏明快，适合喜欢方言幽默的观众。</p>
+                                <div class="card-meta"><span class="hot">🔥 热度 8.2</span><span>单集</span></div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- 3. 最新更新 -->
+                    <section class="section-block" id="update">
+                        <div class="section-header">
+                            <h2>最新更新动态</h2>
+                            <span class="section-hint">按更新日期排列</span>
+                        </div>
+                        <div class="update-list">
+                            <div class="update-item">
+                                <span class="update-index">01</span>
+                                <div class="update-body">
+                                    <div class="update-title">独居晚餐：15 分钟一人食 · 第 28 集</div>
+                                    <div class="update-summary">本期做番茄肥牛乌冬面，从备菜到出锅刚好 15 分钟，附汤底调味比例。</div>
+                                </div>
+                                <span class="update-time">2025-06-12</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-index">02</span>
+                                <div class="update-body">
+                                    <div class="update-title">办公室日常：开会时的摸鱼姿势 · 第 12 集</div>
+                                    <div class="update-summary">远程会议忘记关麦的尴尬瞬间，结尾有反转，适合通勤路上观看。</div>
+                                </div>
+                                <span class="update-time">2025-06-12</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-index">03</span>
+                                <div class="update-body">
+                                    <div class="update-title">零基础学尤克里里：第一课 · 更新和弦图</div>
+                                    <div class="update-summary">补充了 C 调和弦指法图，并新增常见按弦杂音的处理方法。</div>
+                                </div>
+                                <span class="update-time">2025-06-11</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-index">04</span>
+                                <div class="update-body">
+                                    <div class="update-title">深夜快递：门外的包裹是谁放的 · 第 8 集（完）</div>
+                                    <div class="update-summary">悬疑微短剧迎来结局，包裹来源揭晓，片尾有下一季线索彩蛋。</div>
+                                </div>
+                                <span class="update-time">2025-06-10</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-index">05</span>
+                                <div class="update-body">
+                                    <div class="update-title">合租室友的猫：相处第七天 · 第 9 集</div>
+                                    <div class="update-summary">猫把沙发抓坏后，两人第一次认真商量合租规则，关系出现微妙变化。</div>
+                                </div>
+                                <span class="update-time">2025-06-10</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-index">06</span>
+                                <div class="update-body">
+                                    <div class="update-title">手机拍视频：三个稳定器替代方案 · 第 3 集</div>
+                                    <div class="update-summary">用橡皮筋和书架搭出简易滑轨，演示平移镜头的拍法。</div>
+                                </div>
+                                <span class="update-time">2025-06-09</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-index">07</span>
+                                <div class="update-body">
+                                    <div class="update-title">电饭煲一锅出：腊肠焖饭 · 第 5 集</div>
+                                    <div class="update-summary">调整了水米比例，新增土豆版本，口感更绵软。</div>
+                                </div>
+                                <span class="update-time">2025-06-08</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-index">08</span>
+                                <div class="update-body">
+                                    <div class="update-title">东北话点菜：服务员听懵了 · 方言系列更新</div>
+                                    <div class="update-summary">同系列新增“广东话砍价”一集，评论区可投票选择下期方言。</div>
+                                </div>
+                                <span class="update-time">2025-06-07</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 4. 分类入口 -->
+                    <section class="section-block" id="category">
+                        <div class="section-header">
+                            <h2>分类入口</h2>
+                            <span class="section-hint">按内容方向快速定位</span>
+                        </div>
+                        <div class="category-grid">
+                            <a href="/#hot" class="category-item">
+                                <span class="category-icon">🎭</span>
+                                <span class="category-name">搞笑短剧</span>
+                                <span class="category-count">86 条内容</span>
+                            </a>
+                            <a href="/#hot" class="category-item">
+                                <span class="category-icon">📹</span>
+                                <span class="category-name">生活记录</span>
+                                <span class="category-count">72 条内容</span>
+                            </a>
+                            <a href="/#hot" class="category-item">
+                                <span class="category-icon">🎸</span>
+                                <span class="category-name">才艺展示</span>
+                                <span class="category-count">54 条内容</span>
+                            </a>
+                            <a href="/#hot" class="category-item">
+                                <span class="category-icon">🍳</span>
+                                <span class="category-name">美食制作</span>
+                                <span class="category-count">63 条内容</span>
+                            </a>
+                            <a href="/#hot" class="category-item">
+                                <span class="category-icon">🔍</span>
+                                <span class="category-name">悬疑微短剧</span>
+                                <span class="category-count">41 条内容</span>
+                            </a>
+                            <a href="/#hot" class="category-item">
+                                <span class="category-icon">💬</span>
+                                <span class="category-name">情感短剧</span>
+                                <span class="category-count">38 条内容</span>
+                            </a>
+                            <a href="/#hot" class="category-item">
+                                <span class="category-icon">📱</span>
+                                <span class="category-name">实用技巧</span>
+                                <span class="category-count">47 条内容</span>
+                            </a>
+                            <a href="/#hot" class="category-item">
+                                <span class="category-icon">🎤</span>
+                                <span class="category-name">方言搞笑</span>
+                                <span class="category-count">29 条内容</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- 5. 深度解析正文 -->
+                    <section class="section-block" id="deep">
+                        <div class="section-header">
+                            <h2>短视频类型深度解析</h2>
+                            <span class="section-hint">类型差异与选择依据</span>
+                        </div>
+                        <div class="article-body">
+                            <h3>搞笑短剧与悬疑微短剧：节奏和观看门槛的差异</h3>
+                            <p>
+                                搞笑短剧通常单集 1—3 分钟，剧情围绕一个笑点或误会展开，对前情依赖低，适合通勤、排队等碎片时间随时切入。悬疑微短剧单集稍长，约 4—8 分钟，需要连续观看才能理解线索铺垫，更适合睡前或周末集中刷完。两者在更新节奏上也有区别：搞笑短剧多为日更或周更，悬疑微短剧更常见一次性放出全集。
+                            </p>
+                            <p>
+                                如果你不确定选哪种，可以按“能否随时中断”来判断：搞笑短剧中断后不影响理解，悬疑微短剧中断后可能需要回看前情。茄子短视频官方网站的分类入口将这两类分别列出，方便按观看场景筛选。
+                            </p>
+
+                            <h3>生活记录与才艺展示：陪伴型内容与技能型内容</h3>
+                            <p>
+                                生活记录类短视频以日常场景为主，比如做饭、整理房间、通勤路上，节奏平缓，适合作为背景音或睡前放松内容。才艺展示类则带有明确的学习或欣赏目标，例如乐器入门、绘画过程、手工制作，观众往往带着“我也想试试”的心态观看。两类内容在页面中的标签区分明显，生活记录多标注“睡前看”“下饭”，才艺展示多标注“零基础”“分步讲解”。
+                            </p>
+                            <div class="highlight-box">
+                                选择建议：想放松时优先看生活记录；想学点具体技能时，从才艺展示分类进入，按“零基础”标签筛选。
+                            </div>
+
+                            <h3>美食制作与实用技巧：可操作性的强弱对比</h3>
+                            <p>
+                                美食制作类短视频通常包含食材清单、步骤演示和成品展示，观众可以直接跟着做；实用技巧类覆盖手机拍摄、收纳整理、日常维修等，内容更零散但针对性更强。两类内容的共同点是“看完能用”，区别在于美食制作对厨房条件有要求，实用技巧则几乎不挑环境。
+                            </p>
+                            <p>
+                                在茄子短视频官方网站浏览时，如果目标是解决一个具体问题，比如“手机怎么拍稳”，直接进入实用技巧分类更高效；如果只是想找晚餐灵感，美食制作分类下的“快手菜”标签会更对路。
+                            </p>
+
+                            <h3>情感短剧与方言搞笑：情绪价值和地域共鸣</h3>
+                            <p>
+                                情感短剧侧重人物关系和情绪推进，适合喜欢故事感的观众；方言搞笑则依赖语言梗和地域文化，共鸣感强但受众范围相对集中。两类内容在推荐列表中的热度指标不能直接比较，因为目标观众不同。页面通过标签和分类说明帮助区分，避免只凭热度排序造成误判。
+                            </p>
+                            <p>
+                                如果你对某类方言或情感题材有偏好，可以在相关推荐标签中查找更细的方向，比如“合租故事”“东北方言”“治愈系短剧”等具体词。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- 6. 体验指南 -->
+                    <section class="section-block" id="guide">
+                        <div class="section-header">
+                            <h2>浏览与筛选指南</h2>
+                            <span class="section-hint">从哪开始 · 怎么找</span>
+                        </div>
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <span class="step-num">1</span>
+                                <div class="step-text">
+                                    <h4>先确定观看场景</h4>
+                                    <p>通勤路上优先看搞笑短剧和实用技巧，单集短、可随时中断；睡前适合生活记录和情感短剧，节奏舒缓不刺激。</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <span class="step-num">2</span>
+                                <div class="step-text">
+                                    <h4>用分类入口缩小范围</h4>
+                                    <p>点击分类入口中的方向词，快速跳转到对应内容区域。分类名称直接对应你搜索时会用的词，如“搞笑短剧”“美食制作”。</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <span class="step-num">3</span>
+                                <div class="step-text">
+                                    <h4>用标签进一步筛选</h4>
+                                    <p>左栏标签索引和卡片标签提供更细的方向词，如“完结短剧”“零基础”“快手菜”，方便在类型内部继续聚焦。</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <span class="step-num">4</span>
+                                <div class="step-text">
+                                    <h4>关注更新节奏决定是否追更</h4>
+                                    <p>最新更新板块按日期列出条目，更新频率高的内容适合长期追看，一次性完结的内容适合集中刷完。</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <span class="step-num">5</span>
+                                <div class="step-text">
+                                    <h4>通过相关推荐扩展</h4>
+                                    <p>页面底部的相关推荐标签提供了同类或相邻方向的具体词，比如从“搞笑短剧”延伸到“方言搞笑”，从“生活记录”延伸到“独居日常”。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 7. FAQ -->
+                    <section class="section-block" id="faq">
+                        <div class="section-header">
+                            <h2>常见问答</h2>
+                            <span class="section-hint">围绕类型选择与观看场景</span>
+                        </div>
+                        <div class="faq-list">
+                            <details class="faq-item">
+                                <summary>搞笑短剧一般多久更新一次？适合什么人看？</summary>
+                                <div class="faq-answer">
+                                    搞笑短剧更新频率差异较大，常见的是日更或每周 3—4 更，单集时长 1—3 分钟。适合通勤、午休等碎片时间观看，也适合不想追长剧、希望随时能停下来的观众。页面中的“更新至 X 集”信息可以作为追更参考。
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>悬疑微短剧和普通短剧比哪个更值得追？</summary>
+                                <div class="faq-answer">
+                                    两者侧重不同：悬疑微短剧注重线索铺垫和反转，通常需要连续观看，适合愿意花 30—60 分钟集中刷完的观众；普通搞笑短剧或情感短剧单集独立性强，适合随时切入。如果你时间零散，优先选单集独立的类型；如果有一整块空闲时间，悬疑微短剧的沉浸感更强。
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>生活记录类短视频适合睡前看吗？</summary>
+                                <div class="faq-answer">
+                                    大多数生活记录节奏平缓、无强剧情冲突，适合睡前放松观看。建议选择标注“睡前看”或“下饭”标签的条目，避免选择带有明显音效或快节奏剪辑的内容。页面中的生活记录分类已按日常场景组织。
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>零基础学才艺类的短视频，一集能学会吗？</summary>
+                                <div class="faq-answer">
+                                    单集通常只讲一个知识点，比如一个和弦、一个绘画笔法，适合碎片化入门。完整入门一般需要连续看 3—6 集，并配合练习。才艺展示分类下的“零基础”标签可以帮助筛选分步讲解的内容。
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>美食制作短视频里说的“快手菜”大概多快？</summary>
+                                <div class="faq-answer">
+                                    页面中“快手菜”通常指从备菜到出锅在 15—30 分钟内的菜式，常见的是电饭煲焖饭、一锅出、凉拌菜等。具体时长可以在每条内容的看点描述中查看，部分条目会标注准备时间和烹饪时间。
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>方言搞笑短剧听不懂方言还能看吗？</summary>
+                                <div class="faq-answer">
+                                    多数方言搞笑短剧配有字幕，核心笑点往往依赖语气和场景，即使不熟悉方言也能理解大概。如果你对某种方言特别感兴趣，可以在相关推荐标签中查找对应方向，页面会列出同类内容供选择。
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+
+                    <!-- 8. 用户评论 -->
+                    <section class="section-block" id="comments">
+                        <div class="section-header">
+                            <h2>观众评论</h2>
+                            <span class="section-hint">来自示例观众的反馈</span>
+                        </div>
+                        <div class="comment-list">
+                            <div class="comment-item">
+                                <div class="comment-avatar">林</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">林小满</span><span class="comment-date">2025-06-12</span></div>
+                                    <div class="comment-text">通勤路上刷搞笑短剧刚好，一集三分钟，坐过站的风险也小。分类清楚，省得自己翻。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">陈</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">陈默</span><span class="comment-date">2025-06-12</span></div>
+                                    <div class="comment-text">悬疑微短剧那个《深夜快递》一口气看完了，八集刚好一个晚上。希望多来点完结的。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">阿</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">阿汤</span><span class="comment-date">2025-06-11</span></div>
+                                    <div class="comment-text">美食制作里的电饭煲焖饭试了，水米比例按视频说的来，确实没翻车。这种能直接跟着做的挺实用。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">周</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">周末不加班</span><span class="comment-date">2025-06-11</span></div>
+                                    <div class="comment-text">生活记录类看着很解压，尤其是做饭和整理房间的，当背景音放着也不吵。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">李</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">李子树下</span><span class="comment-date">2025-06-10</span></div>
+                                    <div class="comment-text">尤克里里那个教程对零基础挺友好，但一集确实只能学一个点，想入门还是得连着看几集。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">王</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">王大可</span><span class="comment-date">2025-06-10</span></div>
+                                    <div class="comment-text">方言搞笑那集东北话点菜给我笑到了，虽然是演的但口音太亲切了。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">小</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">小鹿乱撞</span><span class="comment-date">2025-06-09</span></div>
+                                    <div class="comment-text">合租室友的猫更新到第九集了，节奏比一般短剧慢一点，但看着挺舒服。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">张</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">张弛有度</span><span class="comment-date">2025-06-09</span></div>
+                                    <div class="comment-text">手机拍视频那个技巧试了橡皮筋方案，确实稳了一些，但跟稳定器还是有差距，不过免费方案可以接受。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">赵</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">赵四</span><span class="comment-date">2025-06-08</span></div>
+                                    <div class="comment-text">分类入口如果能再细分一点就好了，比如美食下面分早餐和晚餐。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">孙</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">孙悟饭</span><span class="comment-date">2025-06-08</span></div>
+                                    <div class="comment-text">按标签找内容挺方便的，搜“完结”直接过滤掉了连载的，适合我这种不想追更的。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">吴</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">吴聊</span><span class="comment-date">2025-06-07</span></div>
+                                    <div class="comment-text">更新动态里日期标的很清楚，一眼能看出来哪些是新的。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">郑</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">郑在输入</span><span class="comment-date">2025-06-07</span></div>
+                                    <div class="comment-text">情感短剧有些剧情比较套路，但下饭看看也还行，不用太动脑。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">刘</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">刘星雨</span><span class="comment-date">2025-06-06</span></div>
+                                    <div class="comment-text">才艺展示里的绘画过程视频很解压，虽然自己不会画，看别人画也挺享受。</div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-avatar">黄</div>
+                                <div class="comment-content">
+                                    <div class="comment-header"><span class="comment-nickname">黄小豆</span><span class="comment-date">2025-06-06</span></div>
+                                    <div class="comment-text">希望热门推荐能按更新时间排一下，有时候想看新的而不是热度高的。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 9. 相关资讯 -->
+                    <section class="section-block" id="news">
+                        <div class="section-header">
+                            <h2>相关资讯</h2>
+                            <span class="section-hint">短视频内容方向动态</span>
+                        </div>
+                        <div class="news-list">
+                            <div class="news-item">
+                                <div class="news-title-row"><span class="news-title">微短剧单集时长呈两极分化，1 分钟与 8 分钟各占一席</span><span class="news-date">2025-06-12</span></div>
+                                <div class="news-summary">近期内容观察显示，搞笑类短剧继续压缩单集时长，悬疑类则倾向拉长到 6—8 分钟以容纳更多线索。</div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title-row"><span class="news-title">生活记录类内容新增“通勤背景音”标签，方便按场景筛选</span><span class="news-date">2025-06-11</span></div>
+                                <div class="news-summary">多个生活记录创作者开始在标题和标签中标注适合的观看场景，方便观众按通勤、家务、睡前等场景查找。</div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title-row"><span class="news-title">零基础才艺教程受青睐，分步讲解比完整教学更易完播</span><span class="news-date">2025-06-10</span></div>
+                                <div class="news-summary">乐器、绘画、手工等领域的创作者更倾向把内容拆成单知识点短集，降低完播门槛。</div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title-row"><span class="news-title">方言搞笑短剧热度回升，地域文化成评论区讨论焦点</span><span class="news-date">2025-06-09</span></div>
+                                <div class="news-summary">东北、四川、广东等方言内容互动率较高，观众常在评论区补充本地说法。</div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title-row"><span class="news-title">美食制作类内容增加“备菜耗时”标注，方便按时间筛选</span><span class="news-date">2025-06-08</span></div>
+                                <div class="news-summary">部分创作者开始在简介中注明准备时间和烹饪时间，帮助观众判断是否适合当下场景。</div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title-row"><span class="news-title">实用技巧类短视频向“问题—解决”结构集中，搜索属性增强</span><span class="news-date">2025-06-07</span></div>
+                                <div class="news-summary">手机拍摄、收纳整理等内容的标题越来越直接对应具体问题，便于观众按需查找。</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 10. 相关推荐 -->
+                    <section class="section-block" id="recommend">
+                        <div class="section-header">
+                            <h2>相关推荐</h2>
+                            <span class="section-hint">按具体方向词扩展</span>
+                        </div>
+                        <div class="recommend-tags">
+                            <a href="/#hot">办公室搞笑短剧</a>
+                            <a href="/#hot">独居一人食记录</a>
+                            <a href="/#hot">悬疑微短剧完结</a>
+                            <a href="/#hot">尤克里里零基础</a>
+                            <a href="/#hot">电饭煲快手菜</a>
+                            <a href="/#hot">合租情感短剧</a>
+                            <a href="/#hot">手机拍视频技巧</a>
+                            <a href="/#hot">东北方言搞笑</a>
+                            <a href="/#hot">睡前生活记录</a>
+                            <a href="/#hot">通勤搞笑短剧</a>
+                        </div>
+                    </section>
+
+                    <!-- 11. 趋势观察 -->
+                    <section class="section-block" id="trend">
+                        <div class="section-header">
+                            <h2>趋势观察</h2>
+                            <span class="section-hint">近期内容方向变化</span>
+                        </div>
+                        <div class="trend-panel">
+                            <div class="trend-item">
+                                <div class="trend-label">单集时长偏好</div>
+                                <div class="trend-value">1—3 分钟</div>
+                                <div class="trend-desc">通勤场景下最常被选择的时长区间</div>
+                            </div>
+                            <div class="trend-item">
+                                <div class="trend-label">完结内容关注度</div>
+                                <div class="trend-value">上升</div>
+                                <div class="trend-desc">不想追更的观众更倾向一次看完</div>
+                            </div>
+                            <div class="trend-item">
+                                <div class="trend-label">零基础教程需求</div>
+                                <div class="trend-value">稳定增长</div>
+                                <div class="trend-desc">分步讲解类才艺内容完播率更高</div>
+                            </div>
+                            <div class="trend-item">
+                                <div class="trend-label">标签场景化</div>
+                                <div class="trend-value">更细分</div>
+                                <div class="trend-desc">“通勤”“睡前”“下饭”成为常用筛选词</div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+
+                <!-- 右栏：辅助阅读 -->
+                <aside class="sidebar-right" aria-label="辅助阅读与热门条目">
+                    <div class="side-card">
+                        <div class="side-card-title">页内目录</div>
+                        <nav class="toc-list" aria-label="页内目录">
+                            <a href="/#intro">平台内容定位</a>
+                            <a href="/#hot">热门内容推荐</a>
+                            <a href="/#update">最新更新动态</a>
+                            <a href="/#category">分类入口</a>
+                            <a href="/#deep">短视频类型深度解析</a>
+                            <a href="/#guide">浏览与筛选指南</a>
+                            <a href="/#faq">常见问答</a>
+                            <a href="/#comments">观众评论</a>
+                            <a href="/#news">相关资讯</a>
+                            <a href="/#recommend">相关推荐</a>
+                            <a href="/#trend">趋势观察</a>
+                        </nav>
+                    </div>
+                    <div class="side-card">
+                        <div class="side-card-title">热门条目</div>
+                        <div class="hot-list">
+                            <a href="/#hot">办公室日常：开会时的摸鱼姿势</a>
+                            <a href="/#hot">独居晚餐：15 分钟一人食</a>
+                            <a href="/#hot">深夜快递：门外的包裹是谁放的</a>
+                            <a href="/#hot">零基础学尤克里里：第一课</a>
+                            <a href="/#hot">电饭煲一锅出：腊肠焖饭</a>
+                            <a href="/#hot">合租室友的猫：相处第七天</a>
+                            <a href="/#hot">东北话点菜：服务员听懵了</a>
+                        </div>
+                    </div>
+                    <div class="side-card">
+                        <div class="side-card-title">延伸阅读</div>
+                        <div class="extend-list">
+                            <a href="/#deep" class="extend-item">搞笑短剧与悬疑微短剧的节奏差异</a>
+                            <a href="/#deep" class="extend-item">生活记录类短视频的陪伴属性</a>
+                            <a href="/#guide" class="extend-item">如何按观看场景筛选内容</a>
+                            <a href="/#faq" class="extend-item">完结短剧与连载短剧的选择建议</a>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 页尾 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo-text">茄子短视频官方网站</div>
+                    <p>面向短视频内容消费的导航型页面，聚合搞笑短剧、生活记录、才艺展示与实用技巧等方向，帮助观众按场景和类型快速定位内容。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>内容方向</h4>
+                    <ul>
+                        <li><a href="/#hot">搞笑短剧</a></li>
+                        <li><a href="/#hot">生活记录</a></li>
+                        <li><a href="/#hot">才艺展示</a></li>
+                        <li><a href="/#hot">美食制作</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>浏览入口</h4>
+                    <ul>
+                        <li><a href="/#hot">热门推荐</a></li>
+                        <li><a href="/#update">最新更新</a></li>
+                        <li><a href="/#category">分类入口</a></li>
+                        <li><a href="/#recommend">相关推荐</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>了解页面</h4>
+                    <ul>
+                        <li><a href="/#intro">平台介绍</a></li>
+                        <li><a href="/#deep">深度解析</a></li>
+                        <li><a href="/#faq">常见问答</a></li>
+                        <li><a href="/#guide">体验指南</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 茄子短视频官方网站 · 内容导航示例页</span>
+                <span class="disclaimer">部分内容为示例数据，仅用于展示页面结构</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            // 搜索功能：本地可见内容查找
+            var searchInput = document.getElementById('searchInput');
+            var searchBtn = document.getElementById('searchBtn');
+            var allCards = document.querySelectorAll('.content-card');
+            var allUpdateItems = document.querySelectorAll('.update-item');
+            var allCategoryItems = document.querySelectorAll('.category-item');
+            var allRecommendTags = document.querySelectorAll('.recommend-tags a');
+            var allNewsItems = document.querySelectorAll('.news-item');
+
+            // 创建无结果提示元素
+            var noResult = document.createElement('div');
+            noResult.className = 'no-result';
+            noResult.textContent = '没有找到匹配的内容方向，换个词试试？';
+            noResult.style.display = 'none';
+            var hotGrid = document.getElementById('hotCardGrid');
+            if (hotGrid && hotGrid.parentNode) {
+                hotGrid.parentNode.insertBefore(noResult, hotGrid.nextSibling);
+            }
+
+            function performSearch() {
+                var term = searchInput.value.trim().toLowerCase();
+                var visibleCount = 0;
+
+                if (term === '') {
+                    // 清空搜索：全部显示
+                    allCards.forEach(function(c) { c.style.display = ''; });
+                    allUpdateItems.forEach(function(i) { i.style.display = ''; });
+                    allCategoryItems.forEach(function(i) { i.style.display = ''; });
+                    allRecommendTags.forEach(function(t) { t.style.display = ''; });
+                    allNewsItems.forEach(function(n) { n.style.display = ''; });
+                    noResult.style.display = 'none';
+                    return;
+                }
+
+                // 卡片搜索
+                allCards.forEach(function(card) {
+                    var text = card.textContent.toLowerCase();
+                    if (text.indexOf(term) > -1) {
+                        card.style.display = '';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // 更新条目搜索
+                allUpdateItems.forEach(function(item) {
+                    var text = item.textContent.toLowerCase();
+                    if (text.indexOf(term) > -1) {
+                        item.style.display = '';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // 分类搜索
+                allCategoryItems.forEach(function(item) {
+                    var text = item.textContent.toLowerCase();
+                    if (text.indexOf(term) > -1) {
+                        item.style.display = '';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // 推荐标签搜索
+                allRecommendTags.forEach(function(tag) {
+                    var text = tag.textContent.toLowerCase();
+                    if (text.indexOf(term) > -1) {
+                        tag.style.display = '';
+                        visibleCount++;
+                    } else {
+                        tag.style.display = 'none';
+                    }
+                });
+
+                // 资讯搜索
+                allNewsItems.forEach(function(item) {
+                    var text = item.textContent.toLowerCase();
+                    if (text.indexOf(term) > -1) {
+                        item.style.display = '';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // 无结果反馈
+                if (visibleCount === 0) {
+                    noResult.style.display = 'block';
+                } else {
+                    noResult.style.display = 'none';
+                }
+            }
+
+            if (searchBtn) {
+                searchBtn.addEventListener('click', performSearch);
+            }
+            if (searchInput) {
+                searchInput.addEventListener('keyup', function(e) {
+                    if (e.key === 'Enter') {
+                        performSearch();
+                    }
+                });
+                // 实时搜索（输入时即时筛选）
+                searchInput.addEventListener('input', performSearch);
+            }
+        })();
+    </script>
+</body>
+  </html>
